@@ -1,5 +1,6 @@
-import Book from '../book/Book';
-import React from 'react';
+import BookListItem from "../book-list-item/BookListItem";
+import React from "react";
+import { Link } from 'react-router-dom'
 
 class BooksList extends React.Component {
   constructor(props) {
@@ -38,8 +39,14 @@ class BooksList extends React.Component {
   render() {
     return (
       <ul>
-        {this.state.books.map(book => {
-          return <li key={book.id}><Book title={book.title} author={book.author}></Book></li>;
+        {this.state.books.map((book) => {
+          return (
+            <li key={book.id}>
+              <Link to={`/books/${book.id}`}>
+                <BookListItem title={book.title} author={book.author}></BookListItem>
+              </Link>
+            </li>
+          );
         })}
       </ul>
     );

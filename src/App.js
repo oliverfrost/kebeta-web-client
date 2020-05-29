@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
-import BooksList from "./books-list/Books-List";
+import Main from "./main/Main";
+import Header from './header/Header';
 
 function App() {
   return (
     <div className="App">
-      <BooksList></BooksList>
+      <Header />
+      <Main />
     </div>
   );
 }

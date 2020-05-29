@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-function Book(props) {
-  const {title, author} = props;
-
-  return <div>
-      <h2>{title}</h2>
-      <span>{author}</span>
-  </div>;
-}
+const Book = () => {
+  return (
+    <div>
+      <h1>Book Title</h1>
+      <span>Book autor</span>
+    </div>
+  );
+};
 
 export default Book;
