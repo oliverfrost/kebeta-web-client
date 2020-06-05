@@ -5,6 +5,8 @@ const Home = () => {
     <div>
       <p>Home Page</p>
       <p>TODO: Render recommended books here</p>
+      <button type="button">Add Book</button>
+      <button type="button">Remove Book</button>
     </div>
   );
 };

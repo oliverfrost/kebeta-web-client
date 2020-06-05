@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from 'react-router-dom'
-import BooksList from "../books-list/Books-List";
+import BooksList from "../containers/books-list/Books-List";
 import Book from '../book/Book';
 import About from "../about/About";
 import Home from '../home/Home';
